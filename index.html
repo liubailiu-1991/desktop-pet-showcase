@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Desktop Pet Alpha：可互动的 Milo 桌面宠物效果预览与未来产品能力说明。"
+    />
+    <meta name="theme-color" content="#f5f3ed" />
+    <meta property="og:title" content="Desktop Pet · Milo Alpha Preview" />
+    <meta
+      property="og:description"
+      content="体验 Milo 的桌面动画、点击与拖动，并了解桌面宠物未来能做什么。"
+    />
+    <meta property="og:image" content="assets/milo/preview.png" />
+    <title>Desktop Pet · Milo Alpha Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark" aria-hidden="true">M</span>
+        <span>Desktop Pet</span>
+      </a>
+      <span class="preview-tag">ALPHA PREVIEW</span>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="demo-column">
+          <div class="demo-window">
+            <div class="window-bar" aria-hidden="true">
+              <div class="window-dots"><i></i><i></i><i></i></div>
+              <span>我的桌面 · Milo</span>
+              <span class="online-dot">本地运行</span>
+            </div>
+
+            <div class="desktop-stage" id="desktopStage">
+              <div class="ambient ambient-one"></div>
+              <div class="ambient ambient-two"></div>
+              <div class="speech-bubble" id="speechBubble" role="status">
+                今天也一起慢慢来。
+              </div>
+              <div class="pet-wrap" id="petWrap" tabindex="0" aria-label="Milo 桌面宠物，可点击或拖动">
+                <div class="pet-shadow" aria-hidden="true"></div>
+                <img
+                  id="petSprite"
+                  src="assets/milo/idle/001.png"
+                  alt="正在待机的像素风绿头鸭 Milo"
+                  draggable="false"
+                />
+              </div>
+              <div class="stage-hint">点击 Milo 互动 · 拖动它换个位置</div>
+            </div>
+
+            <div class="action-panel" aria-label="动作选择">
+              <div class="now-playing">
+                <span class="pulse" aria-hidden="true"></span>
+                <span>当前状态</span>
+                <strong id="actionLabel">待机陪伴</strong>
+              </div>
+              <div class="action-buttons" id="actionButtons">
+                <button class="action-button is-active" data-action="idle">待机</button>
+                <button class="action-button" data-action="walk">散步</button>
+                <button class="action-button" data-action="working">工作</button>
+                <button class="action-button" data-action="reading">阅读</button>
+                <button class="action-button" data-action="thinking">思考</button>
+                <button class="action-button" data-action="success">完成</button>
+                <button class="action-button" data-action="sleep">休息</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="current-proof">
+            <span>当前预览已经可以看到</span>
+            <ul>
+              <li>桌面角色动画</li>
+              <li>状态动作切换</li>
+              <li>点击与拖动互动</li>
+              <li>多角色基础</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="story-column">
+          <p class="eyebrow">PERSONAL DESKTOP COMPANION</p>
+          <h1 id="page-title">一个会陪伴，<br />也懂得保持分寸的桌面角色。</h1>
+          <p class="hero-copy">
+            它不只是在桌面上循环播放动画。未来，它会理解你的工作状态，用动作和轻量反馈陪伴你，同时把隐私、权限和安静的选择权始终交给你。
+          </p>
+
+          <div class="principles" aria-label="产品重点">
+            <span>本地优先</span>
+            <span>默认安静</span>
+            <span>能力可关闭</span>
+            <span>隐私可理解</span>
+          </div>
+
+          <div class="capability-grid">
+            <article class="capability-card accent-card">
+              <span class="card-number">01</span>
+              <h2>真正的桌面陪伴</h2>
+              <p>常驻桌面，可拖动、调大小、隐藏或退出。工作时安静，休息时更活泼。</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-number">02</span>
+              <h2>理解你在做什么</h2>
+              <p>连接 Codex、Obsidian、ZERO 与浏览器后，用动作表达工作、阅读、思考和完成。</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-number">03</span>
+              <h2>属于你的角色</h2>
+              <p>选择 Milo 等现有角色，未来也可将合法拥有的宠物照片或插画制作成新桌宠。</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-number">04</span>
+              <h2>轻量 AI 陪伴</h2>
+              <p>文字交流、建议、提醒与可选语音反馈；不需要时，它也可以只是单纯的桌宠。</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-number">05</span>
+              <h2>隐私由你决定</h2>
+              <p>外部能力默认关闭。需要上传内容时，先说明上传什么、为什么，并由你确认。</p>
+            </article>
+            <article class="capability-card">
+              <span class="card-number">06</span>
+              <h2>像普通软件一样可靠</h2>
+              <p>记住角色与偏好，异常时安全恢复，并提供易懂的诊断、升级、回滚与卸载入口。</p>
+            </article>
+          </div>
+
+          <aside class="focus-note">
+            <span class="focus-icon" aria-hidden="true">✦</span>
+            <div>
+              <strong>最重要的产品原则</strong>
+              <p>不是让桌宠获得更多权限，而是让用户随时知道它在做什么，并且随时能够停止。</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="journey" aria-labelledby="journey-title">
+        <div>
+          <p class="eyebrow">A SIMPLE DAY WITH MILO</p>
+          <h2 id="journey-title">从打开电脑，到安静陪伴</h2>
+        </div>
+        <ol>
+          <li><span>打开</span><p>Milo 回到熟悉的位置，恢复你的角色与偏好。</p></li>
+          <li><span>工作</span><p>它感知工具状态，用动作陪伴，不展示私人正文。</p></li>
+          <li><span>互动</span><p>你可以点击、换角色、聊天，或切换为安静模式。</p></li>
+          <li><span>休息</span><p>工作结束后恢复轻松状态，也可以随时隐藏或退出。</p></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Desktop Pet Alpha</strong> · 当前为产品效果展示，不代表全部未来能力已经开放。</p>
+      <p>首发目标：macOS 13+ · Intel / Apple Silicon · Local-first</p>
+    </footer>
+  </body>
+</html>

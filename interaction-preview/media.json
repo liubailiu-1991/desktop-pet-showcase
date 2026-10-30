@@ -1,0 +1,139 @@
+{
+  "description": "Interaction and motion illustration only; placeholder character, not final design.",
+  "interactions": [
+    {
+      "title": "完整交互概览",
+      "gif": "media/00-overview.gif",
+      "seconds": 54.16,
+      "bytes": 4076840
+    },
+    {
+      "title": "悬停，唤出快捷胶囊",
+      "gif": "media/01-hover.gif",
+      "seconds": 6.0,
+      "bytes": 206489
+    },
+    {
+      "title": "点击对话，展开输入框",
+      "gif": "media/02-conversation.gif",
+      "seconds": 6.91,
+      "bytes": 395588
+    },
+    {
+      "title": "点击搜索，快速输入关键词",
+      "gif": "media/03-search.gif",
+      "seconds": 7.0,
+      "bytes": 422136
+    },
+    {
+      "title": "打开宠物菜单，切换姿态",
+      "gif": "media/04-menu.gif",
+      "seconds": 8.16,
+      "bytes": 578819
+    },
+    {
+      "title": "拖动宠物，输入框跟随",
+      "gif": "media/05-drag-follow.gif",
+      "seconds": 10.08,
+      "bytes": 1193353
+    },
+    {
+      "title": "拖到右边缘，收纳露头",
+      "gif": "media/06-dock-right.gif",
+      "seconds": 8.0,
+      "bytes": 658478
+    },
+    {
+      "title": "拖到左边缘，收纳露头",
+      "gif": "media/07-dock-left.gif",
+      "seconds": 8.0,
+      "bytes": 659181
+    }
+  ],
+  "actions": [
+    {
+      "title": "待机眨眼",
+      "gif": "actions/01-idle.gif",
+      "poster": "actions/01-idle.png",
+      "bytes": 54632
+    },
+    {
+      "title": "轻忙碌打字",
+      "gif": "actions/02-working.gif",
+      "poster": "actions/02-working.png",
+      "bytes": 101731
+    },
+    {
+      "title": "趴姿回应",
+      "gif": "actions/03-prone.gif",
+      "poster": "actions/03-prone.png",
+      "bytes": 53643
+    },
+    {
+      "title": "香箱眨眼",
+      "gif": "actions/04-loaf.gif",
+      "poster": "actions/04-loaf.png",
+      "bytes": 40469
+    },
+    {
+      "title": "打盹与醒来",
+      "gif": "actions/05-doze.gif",
+      "poster": "actions/05-doze.png",
+      "bytes": 122053
+    },
+    {
+      "title": "敲木鱼",
+      "gif": "actions/06-woodfish.gif",
+      "poster": "actions/06-woodfish.png",
+      "bytes": 40035
+    },
+    {
+      "title": "歪头回应",
+      "gif": "actions/07-tilt.gif",
+      "poster": "actions/07-tilt.png",
+      "bytes": 67560
+    },
+    {
+      "title": "蹭蹭回应",
+      "gif": "actions/08-nuzzle.gif",
+      "poster": "actions/08-nuzzle.png",
+      "bytes": 48432
+    },
+    {
+      "title": "小扑一下",
+      "gif": "actions/09-pounce.gif",
+      "poster": "actions/09-pounce.png",
+      "bytes": 96572
+    },
+    {
+      "title": "舔爪整理",
+      "gif": "actions/10-groom.gif",
+      "poster": "actions/10-groom.png",
+      "bytes": 42478
+    },
+    {
+      "title": "看看尾巴",
+      "gif": "actions/11-tail.gif",
+      "poster": "actions/11-tail.png",
+      "bytes": 61501
+    },
+    {
+      "title": "拖动走路",
+      "gif": "actions/12-walk.gif",
+      "poster": "actions/12-walk.png",
+      "bytes": 36895
+    },
+    {
+      "title": "左侧扒边",
+      "gif": "actions/13-edge-left.gif",
+      "poster": "actions/13-edge-left.png",
+      "bytes": 25987
+    },
+    {
+      "title": "右侧扒边",
+      "gif": "actions/14-edge-right.gif",
+      "poster": "actions/14-edge-right.png",
+      "bytes": 26395
+    }
+  ]
+}
